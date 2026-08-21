@@ -22,9 +22,9 @@ Vibration_mm_s = st.input["Vibration_mm_s"]
 
 
 df = pd.DtaFrame({
-"Load_%": [Load_%],
+"Load": [Load_%],
 "Temperature_C": [Temperature_C],
-"Oil_Level_%": [Oil_Level_%],
+"Oil_Level": [Oil_Level_%],
 "Vibration_mm_s": [Vibration_mm_s]
 })
 
