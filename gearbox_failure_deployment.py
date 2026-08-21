@@ -31,9 +31,6 @@ input_data = pd.DataFrame({
 if st.button("Predict Gearbox Failure Segmentation"):
     prediction = model.predict(input_data)
 
-    st.write(input_data)
-    st.write("Prediction:", prediction[0])
-
     if prediction[0] == 1:
         st.error("Gear Failure Predicted")
     else:
