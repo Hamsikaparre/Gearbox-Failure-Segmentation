@@ -17,7 +17,7 @@ st.title("Wine Type Prediction!")
 
 Load_%= st.input["Load_%"]
 Temperature_C = st.input["Temperature_C"]
-Oil_Level_% = st.input["Oil_Level_%"]
+Oil_Level = st.input["Oil_Level_%"]
 Vibration_mm_s = st.input["Vibration_mm_s"]
 
 
