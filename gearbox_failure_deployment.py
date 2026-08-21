@@ -15,17 +15,17 @@ model = joblib.load("Gearbox_failure_prediction.pkl")
 
 st.title("Wine Type Prediction!")
 
-"Load_%" = st.input["Load_%"]
-"Temperature_C" = st.input["Temperature_C"]
-"Oil_Level_%" = st.input["Oil_Level_%"]
-"Vibration_mm_s" = st.input["Vibration_mm_s"]
+Load_%= st.input["Load_%"]
+Temperature_C = st.input["Temperature_C"]
+Oil_Level_% = st.input["Oil_Level_%"]
+Vibration_mm_s = st.input["Vibration_mm_s"]
 
 
 df = pd.DtaFrame({
-Load_%: [Load_%],
-Temperature_C: [Temperature_C],
-Oil_Level_%: [Oil_Level_%],
-Vibration_mm_s: [Vibration_mm_s]
+"Load_%": [Load_%],
+"Temperature_C": [Temperature_C],
+"Oil_Level_%": [Oil_Level_%],
+"Vibration_mm_s": [Vibration_mm_s]
 })
 
 if st.button("Predict Gearbox Failure Segmentation"):
