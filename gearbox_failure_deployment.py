@@ -28,4 +28,9 @@ input_data = pd.DataFrame({
     'Oil_Level_%': [Oil_Level]
 })
 if st.button("Predict Gearbox Failure Segmentation"):
-  prediction = model.predict(input_data)[0]
+    prediction = model.predict(input_data)
+
+    if prediction[0] == 1:
+        st.error("Gear Failure Predicted")
+    else:
+        st.success("No Gear Failure Predicted")
